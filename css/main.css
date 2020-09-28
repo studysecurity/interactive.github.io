@@ -211,3 +211,19 @@ body.before-load {
 	font-size: 3rem;
 	color: rgb(29, 29, 31);
 }
+
+@media (min-width: 1024px) {
+	#scroll-section-0 h1 {
+		font-size: 6vw;
+	}
+	.main-message {
+		font-size: 4vw;
+	}
+	.description {
+		padding: 0;
+		font-size: 2rem;
+	}
+	.description strong {
+		font-size: 6rem;
+	}
+}
