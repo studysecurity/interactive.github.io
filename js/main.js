@@ -251,7 +251,7 @@
     delayedYOffset = delayedYOffset + (yOffset - delayedYOffset) * acc; // 애니메이션 감속(매끄럽게)
 
     if (!enterNewScene) {
-      if (currentScene === 0) {
+      if (currentScene === 0 || currentScene === 2) {
         const currentYOffset = delayedYOffset - prevScrollHeight;
         const objs = sceneInfo[currentScene].objs;
         const values = sceneInfo[currentScene].values;
