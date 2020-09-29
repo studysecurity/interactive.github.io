@@ -80,12 +80,14 @@ body.before-load {
 	position: relative;
 	padding-top: 50vh;
 }
-#scroll-section-0 h1 {
+#scroll-section-0 h1,
+#scroll-section-4 h1 {
 	position: relative;
 	top: -10vh;
 	z-index: 5;
 	font-size: 4rem;
 	text-align: center;
+	color: white;
 }
 .main-message {
 	display: flex;
@@ -153,7 +155,7 @@ body.before-load {
 }
 .canvas-caption {
 	max-width: 1000px;
-	margin: -24rem auto 0;
+	margin: -22rem auto 0;
 	padding: 0 1rem;
 	font-size: 1.2rem;
 	color: #888;
@@ -172,10 +174,16 @@ body.before-load {
 	left: 0;
 	width: 100%;
 }
+
+#show-scene-3 #scroll-section-4 {
+	background-color: black;
+}
+
 #show-scene-0 #scroll-section-0 .sticky-elem,
 #show-scene-1 #scroll-section-1 .sticky-elem,
 #show-scene-2 #scroll-section-2 .sticky-elem,
-#show-scene-3 #scroll-section-3 .sticky-elem {
+#show-scene-3 #scroll-section-3 .sticky-elem, 
+#show-scene-4 #scroll-section-4 .sticky-elem {
 	display: block;
 	will-change: transform, opacity;
 }
@@ -251,6 +259,36 @@ body.before-load {
 
 .normal-content {
 	margin-bottom: 10rem;
+}
+
+.pencil-logo {
+	left: 50%;
+	top: 50%;
+	width: 1000vw;
+	transform: translate(-10%, -50%);
+}
+.pencil {
+	left: auto;
+	top: auto;
+	right: -10%;
+	bottom: -80%;
+	width: 3.5vw;
+	transform: rotate(-120deg);
+}
+.ribbon-path {
+	left: 50%;
+	top: 50%;
+	min-width: 850px;
+	transform: translate(-50%, -50%);
+}
+.ribbon-path path {
+	fill: none;
+	stroke: #FF0044;
+	stroke-width: 62;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-dasharray: 1401;
+	stroke-dashoffset: 1401;
 }
 
 @media (min-width: 1024px) {
